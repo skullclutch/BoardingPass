@@ -10,8 +10,8 @@ public class Main {
 
         Member member = new Member();
 
-        member.setMembership();
-
+//        member.setMembership();
+//
         System.out.println(member.getMembership());
 
 
