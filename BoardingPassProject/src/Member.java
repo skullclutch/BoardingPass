@@ -22,8 +22,7 @@ public class Member {
     public Member() throws IOException {
 
         Scanner sc = new Scanner(System.in);
-        System.out.println("Welcome to the Ticket Generation Terminal. " +
-                "Please enter your Name, Email, Phone Number, Gender, Age, Date, Destination, Departure Time");
+        System.out.println("Welcome to the Ticket Generation Terminal.");
         System.out.println("Please enter your name");
         this.name = sc.nextLine();
         memberList.put("Name", name);
@@ -50,6 +49,7 @@ public class Member {
         this.departureTime = sc.nextLine();
         memberList.put("Departure Time", departureTime);
 
+        Ticket ticket = new Ticket(this.departureTime, this.destination);
 
         try {
             //When writing the FileWriter, type in the filename, and "true" if you want to append or "false" if you don't want to append if a file exists.
