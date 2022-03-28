@@ -1,4 +1,8 @@
+import java.text.DateFormat;
+import java.time.format.DateTimeFormatter;
+import java.time.format.DateTimeFormatterBuilder;
 import java.util.Locale;
+import java.util.Random;
 
 public class Ticket {
 
@@ -24,10 +28,10 @@ public class Ticket {
     double newYork = 2806.00;
 
 
-
     Ticket(String departureTime, String destination) {
-       this.ETA = eta(departureTime, chooseDestination(destination));
-        System.out.println(this.departureTime + " " + this.ETA);
+        this.ETA = eta(departureTime, chooseDestination(destination));
+        this.boardingPassTicket = String.valueOf(generatePassNumber());
+        System.out.println(this.departureTime + " " + this.ETA + " " + this.boardingPassTicket);
     }
 
 
@@ -36,17 +40,17 @@ public class Ticket {
 
         int time = 0;
 
-        switch (Destination.toUpperCase(Locale.ROOT)) {
-            case "DENVER":
-                 time = calcTimeOfFlight(denver);
+        switch (Destination) {
+            case "Denver":
+                time = calcTimeOfFlight(denver);
                 break;
-            case "CHICAGO":
+            case "Chicago":
                 time = calcTimeOfFlight(chicago);
                 break;
-            case "NEW YORK":
+            case "New York":
                 time = calcTimeOfFlight(newYork);
                 break;
-            case "DALLAS":
+            case "Dallas":
                 time = calcTimeOfFlight(dallas);
                 break;
             default:
@@ -70,12 +74,24 @@ public class Ticket {
 
     public int eta(String departureTime, int flightTime) {
 
+//        this.departureTime = DateFormat.getTimeInstance().format(departureTime);
         this.departureTime = departureTime;
 
         return Integer.parseInt(departureTime) + flightTime;
 
     }
 
+    public int generatePassNumber() {
+
+        Random r = new Random();
+
+        int ticketNum = r.nextInt(5000);
+
+        System.out.println("Boarding Pass Number: " + ticketNum);
+
+        return ticketNum;
+
+    }
 
 
 }

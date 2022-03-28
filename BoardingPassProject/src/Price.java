@@ -3,6 +3,7 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
+import java.util.Locale;
 
 //TODO to call this method, just enter ticketPrice(age, "gender", "destination", "departureDate");
 
@@ -15,6 +16,8 @@ public class Price {
     static double basePriceDenver = 288.00;
     static double basePriceDallas = 309.88;
     static double basePriceNYC = 426.00;
+
+
 
 
     public static double ticketPrice(int age, String gender, String destination, String departureDate) throws ParseException {
@@ -32,7 +35,7 @@ public class Price {
         double ageDiscount = rate;
 
         if(age <=12){
-            ageDiscount = rate/2;
+            ageDiscount = rate - (rate * .5);
         } else if(age >= 60){
             ageDiscount = rate - (rate * .6);
         } else {ageDiscount = rate;}
@@ -41,13 +44,14 @@ public class Price {
 
         if(gender == "f"){
             finalPrice = ageDiscount - (ageDiscount * .25);
+            System.out.println("Discount of gender: " + finalPrice);
 
         } else finalPrice = ageDiscount;
 
         return finalPrice;
     }
 
-    ;
+
     public static double ratebyDestination(String destination){
 
         switch (destination){

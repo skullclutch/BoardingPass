@@ -1,4 +1,5 @@
 import java.io.*;
+import java.text.ParseException;
 import java.util.HashMap;
 import java.util.Scanner;
 
@@ -10,7 +11,7 @@ public class Member {
     private String phoneNumber;
     private String gender;
     private int age;
-    private String date;
+    private String departureDate;
     private String destination;
     private String departureTime;
     private String membership;
@@ -19,37 +20,38 @@ public class Member {
     HashMap<String, Object> memberList = new HashMap<>();
 
 
-    public Member() throws IOException {
+    public Member(String name,String email,String phoneNumber, String gender, String age, String departureDate, String destination, String departureTime) throws IOException, ParseException {
 
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Welcome to the Ticket Generation Terminal.");
-        System.out.println("Please enter your name");
-        this.name = sc.nextLine();
+        this.name = name;
         memberList.put("Name", name);
-        System.out.println("Please enter your email");
-        this.email = sc.nextLine();
+
+        this.email = email;
         memberList.put("Email", email);
-        System.out.println("Please enter your phone number");
-        this.phoneNumber = sc.nextLine();
+
+        this.phoneNumber = phoneNumber;
         memberList.put("Phone Number", phoneNumber);
-        System.out.println("Please enter your gender");
-        this.gender = sc.nextLine();
+
+        this.gender = gender;
         memberList.put("Gender", gender);
-        System.out.println("Please enter your age");
-        this.age = sc.nextInt();
+
+        this.age = Integer.parseInt(age);
         memberList.put("Age", age);
-        sc.nextLine();
-        System.out.println("Please enter the date you wish to leave");
-        this.date = sc.nextLine();
-        memberList.put("Date", date);
-        System.out.println("Please enter where you would like to travel to");
-        this.destination = sc.nextLine();
+        //Fix age issue
+
+        this.departureDate = departureDate;
+        memberList.put("Date", departureDate);
+
+        this.destination = destination;
         memberList.put("Destination", destination);
-        System.out.println("Please enter what time you would like to depart");
-        this.departureTime = sc.nextLine();
+
+        this.departureTime = departureTime;
         memberList.put("Departure Time", departureTime);
 
         Ticket ticket = new Ticket(this.departureTime, this.destination);
+
+        Price.ticketPrice(this.age,this.gender,this.destination,this.departureDate);
+
+
 
         try {
             //When writing the FileWriter, type in the filename, and "true" if you want to append or "false" if you don't want to append if a file exists.
