@@ -11,22 +11,9 @@ public class Main {
 
         Window window = new Window();
 
-
 //        member.setMembership();
 //
-
-
-
-
-
 // look up ways to add time to date formatting time and adding hours to that
-
-
-
-
-
-
-
 
     }
 

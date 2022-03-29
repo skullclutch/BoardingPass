@@ -1,8 +1,9 @@
 import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeFormatterBuilder;
-import java.util.Locale;
-import java.util.Random;
+import java.util.*;
 
 public class Ticket {
 
@@ -19,7 +20,7 @@ public class Ticket {
     public String time = "";
     public String departureTime;
     public String destination;
-    int ETA;
+    String ETA;
 
 
     double dallas = 1451.00;
@@ -28,11 +29,17 @@ public class Ticket {
     double newYork = 2806.00;
 
 
-    Ticket(String departureTime, String destination) {
+    Ticket(String departureTime, String destination) throws ParseException {
         this.ETA = eta(departureTime, chooseDestination(destination));
-        this.boardingPassTicket = String.valueOf(generatePassNumber());
+        this.boardingPassTicket = String.valueOf(getGenNumber());
         System.out.println(this.departureTime + " " + this.ETA + " " + this.boardingPassTicket);
     }
+
+    //ONLY USED WHILE TESTING WITH MAIN METHOD IN THIS CLASS
+    public Ticket() {
+
+    }
+    //*****************************
 
 
     public int chooseDestination(String Destination) { //If theres a GUI parameter would take in a listener
@@ -47,7 +54,7 @@ public class Ticket {
             case "Chicago":
                 time = calcTimeOfFlight(chicago);
                 break;
-            case "New York":
+            case "New York City":
                 time = calcTimeOfFlight(newYork);
                 break;
             case "Dallas":
@@ -66,32 +73,49 @@ public class Ticket {
 
         double flightTime = Math.ceil(Destination / 500); //plane travels at 500mph
 
-        System.out.println("this is how long the flight will take " + flightTime);
+        System.out.println("Flight Time: " + flightTime);
 
         return (int) flightTime;
 
     }
 
-    public int eta(String departureTime, int flightTime) {
+    public String eta(String departureTime, int flightTime) throws ParseException {
+        System.out.println("Departure Time: " + departureTime);
 
-//        this.departureTime = DateFormat.getTimeInstance().format(departureTime);
-        this.departureTime = departureTime;
+        // get the hours from the departure time and convert it to date so that the Calendar util will accept it
+        SimpleDateFormat sdf = new SimpleDateFormat("HH:mm");
+        Date departTimeParsed = sdf.parse(departureTime);
 
-        return Integer.parseInt(departureTime) + flightTime;
+        //Create a calendar object, set it to the departure Time and add the flight time to it
+        Calendar calendar = Calendar.getInstance();
+        calendar.setTime(departTimeParsed);
+        calendar.add(Calendar.HOUR_OF_DAY, flightTime);
+
+        //set up way to print out a string using the SimpleDateFormat
+        SimpleDateFormat sdf2 = new SimpleDateFormat("hh:mm aa");
+        long arrivalTimeinHours =  (calendar.getTimeInMillis());
+        System.out.println("ETA: " + sdf2.format(arrivalTimeinHours));
+        return (sdf.format(arrivalTimeinHours));
+
 
     }
 
-    public int generatePassNumber() {
 
-        Random r = new Random();
+   GenNumber genNumber = new GenNumber();
 
-        int ticketNum = r.nextInt(5000);
-
-        System.out.println("Boarding Pass Number: " + ticketNum);
-
-        return ticketNum;
-
+    public GenNumber getGenNumber() {
+        return genNumber;
     }
-
+    //    public int generatePassNumber() {
+//
+//        Random r = new Random();
+//
+//        int ticketNum = r.nextInt(5000);
+//
+//        System.out.println("Boarding Pass Number: " + ticketNum);
+//
+//        return ticketNum;
+//
+//    }
 
 }

@@ -92,6 +92,7 @@ public class Window {
         submitButton.addActionListener((event) -> {
             try {
                 new Member(nameText.getText(),emailText.getText(),phoneNumberText.getText(), genderText.getText(), ageText.getText(), departureDateText.getText(),destinationText.getText(),departureTimeText.getText());
+                System.out.println(destinationText.getText());
             } catch (IOException e) {
                 e.printStackTrace();
             } catch (ParseException e) {

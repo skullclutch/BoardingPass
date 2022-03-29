@@ -36,7 +36,6 @@ public class Member {
 
         this.age = Integer.parseInt(age);
         memberList.put("Age", age);
-        //Fix age issue
 
         this.departureDate = departureDate;
         memberList.put("Date", departureDate);
