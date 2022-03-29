@@ -13,7 +13,7 @@ public class Ticket {
     Origin (Where they are leaving from will be final.)
     Destination(Give user choices of Destination to choose from)
     ETA (How far in miles origin is from destination and divide that by how fast plane travels return a double in 0D 0HR 0MIN 0SEC)
-    Departure Time
+    Departure Time occurring
      */
 
     private String boardingPassTicket;
@@ -31,8 +31,8 @@ public class Ticket {
 
     Ticket(String departureTime, String destination) throws ParseException {
         this.ETA = eta(departureTime, chooseDestination(destination));
-        this.boardingPassTicket = String.valueOf(getGenNumber());
-        System.out.println(this.departureTime + " " + this.ETA + " " + this.boardingPassTicket);
+//        this.boardingPassTicket = String.valueOf(getGenNumber());
+//        System.out.println(this.departureTime + " " + this.ETA + " " + this.boardingPassTicket);
     }
 
     //ONLY USED WHILE TESTING WITH MAIN METHOD IN THIS CLASS
@@ -101,11 +101,11 @@ public class Ticket {
     }
 
 
-   GenNumber genNumber = new GenNumber();
-
-    public GenNumber getGenNumber() {
-        return genNumber;
-    }
+//   GenNumber genNumber = new GenNumber();
+//
+//    public String getGenNumber() {
+//        return genNumber.getNumber();
+//    }
     //    public int generatePassNumber() {
 //
 //        Random r = new Random();

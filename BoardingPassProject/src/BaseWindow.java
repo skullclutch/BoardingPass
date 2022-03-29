@@ -58,20 +58,7 @@ public class BaseWindow extends Member implements ActionListener {
 
         submitButton = new JButton("Submit");
         submitButton.setBounds(50,225,100,50);
-<<<<<<< Updated upstream:BoardingPassProject/src/Window.java
-        submitButton.addActionListener((event) -> {
-            try {
-                new Member(nameText.getText(),emailText.getText(),phoneNumberText.getText(), genderText.getText(), ageText.getText(), departureDateText.getText(),destinationText.getText(),departureTimeText.getText());
-                System.out.println(destinationText.getText());
-            } catch (IOException e) {
-                e.printStackTrace();
-            } catch (ParseException e) {
-                e.printStackTrace();
-            }
-        });
-=======
         submitButton.addActionListener(this);
->>>>>>> Stashed changes:BoardingPassProject/src/BaseWindow.java
         frame.add(submitButton);
 
         quitButton = new JButton("Quit");

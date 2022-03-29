@@ -5,6 +5,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
+import java.text.ParseException;
 
 public class DepartureDateTimeWindow extends DestinationWindow implements ActionListener {
 
@@ -30,7 +31,7 @@ public class DepartureDateTimeWindow extends DestinationWindow implements Action
         frame.setLocationRelativeTo(null);
 
         departureDateLabel = new JLabel("Enter Departure Date");
-        departureDateLabel.setBounds(10,55,90,20);
+        departureDateLabel.setBounds(10,55,120,20);
         frame.add(departureDateLabel);
 
         departureDateText = new JTextField();
@@ -38,7 +39,7 @@ public class DepartureDateTimeWindow extends DestinationWindow implements Action
         frame.add(departureDateText);
 
         departureTimeLabel = new JLabel("Enter Departure Time");
-        departureTimeLabel.setBounds(10,75,90,20);
+        departureTimeLabel.setBounds(10,75,130,20);
         frame.add(departureTimeLabel);
 
         departureTimeText = new JTextField("ex: 16:00 for 4:00pm");
@@ -90,7 +91,11 @@ public class DepartureDateTimeWindow extends DestinationWindow implements Action
 
             frame.dispose();
 
-            BoardingPassTicketWindow boardingPassTicketWindow = new BoardingPassTicketWindow();
+            try {
+                BoardingPassTicketWindow boardingPassTicketWindow = new BoardingPassTicketWindow();
+            } catch (ParseException ex) {
+                ex.printStackTrace();
+            }
 
         }
 

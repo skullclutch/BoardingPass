@@ -1,11 +1,10 @@
 import java.io.*;
 import java.text.ParseException;
 import java.util.HashMap;
-import java.util.Scanner;
+import java.util.Locale;
+import java.util.UUID;
 
 public class Member {
-
-    private String input;
     private String name;
     private String email;
     private String phoneNumber;
@@ -15,7 +14,11 @@ public class Member {
     private String destination;
     private String departureTime;
     private String membership;
-    private final String origin = "LAX";
+    private String origin = "LAX";
+    private String boardingPassNumber;
+    private String randomUUID;
+    private String ETA;
+    private String ticketPrice;
     FileWriter userMembership = null;
 
     HashMap<String, Object> memberList = new HashMap<>();
@@ -46,6 +49,8 @@ public class Member {
         this.destination = getDestination();
         this.departureDate = getDepartureDate();
         this.departureTime = getDepartureTime();
+        this.boardingPassNumber = getBoardingPassNumber();
+        this.origin = getOrigin();
     }
 
     public String getOrigin() {
@@ -132,10 +137,26 @@ public class Member {
         memberList.put("Departure Time", departureTime);
     }
 
+    public String getBoardingPassNumber() {
+        this.randomUUID = UUID.randomUUID().toString().split("-")[0].toUpperCase(Locale.ROOT);
+        memberList.put("Boarding Pass Number", boardingPassNumber);
+        return randomUUID;
+    }
+
+    public String getETA() throws ParseException {
+        this.ETA = String.valueOf(new Ticket(this.getDepartureTime(),this.getDestination()));
+        memberList.put("ETA", ETA);
+        return ETA;
+    }
+
+    public String getTicketPrice() throws ParseException {
+        this.ticketPrice = String.valueOf(Price.ticketPrice(this.age, this.gender, this.destination, this.departureDate));
+        memberList.put("Ticket Price", ticketPrice);
+        return ticketPrice;
+    }
 
 
-
-    public Member(String name,String email,String phoneNumber, String gender, String age, String departureDate, String destination, String departureTime) throws IOException, ParseException {
+    public Member(String name, String email, String phoneNumber, String gender, String age, String departureDate, String destination, String departureTime) throws IOException, ParseException {
 
         this.name = name;
         memberList.put("Name", name);
@@ -161,10 +182,9 @@ public class Member {
         this.departureTime = departureTime;
         memberList.put("Departure Time", departureTime);
 
-        Ticket ticket = new Ticket(this.departureTime, this.destination);
+//        Ticket ticket = new Ticket(this.departureTime, this.destination);
 
-        Price.ticketPrice(this.age,this.gender,this.destination,this.departureDate);
-
+//        Price.ticketPrice(this.age,this.gender,this.destination,this.departureDate);
 
 
         try {
@@ -181,6 +201,7 @@ public class Member {
         }
 
     }
+
 
 //    public String getInput() {
 //        return input;
