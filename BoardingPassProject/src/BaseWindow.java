@@ -1,23 +1,24 @@
 import javax.swing.*;
 import java.awt.*;
-import java.io.IOException;
-import java.text.ParseException;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-public class Window {
+
+public class BaseWindow extends Member implements ActionListener {
 
     JFrame frame;
     JButton quitButton, submitButton;
-    JTextField nameText, departureDateText, ageText, emailText, genderText, destinationText, departureTimeText,phoneNumberText;
-    JLabel nameLabel, departureDateLabel, ageLabel, emailLabel, genderLabel, destinationLabel, departureTimeLabel, phoneNumberLabel;
+    JTextField nameText, ageText, emailText, phoneNumberText;
+    JLabel nameLabel, ageLabel, emailLabel, phoneNumberLabel;
+    public Member member = new Member();
 
+    BaseWindow() {
 
-    Window() {
         frame = new JFrame();
         frame.setLayout(null);
-        frame.setTitle("Boarding Pass Ticket");
-        frame.setSize(600,400);
+        frame.setTitle("Boarding Pass Ticket Terminal");
+        frame.setSize(1000,800);
         frame.setLocationRelativeTo(null);
-
 
         ImageIcon image = new ImageIcon("BoardingPass/BoardingPassProject/src/img.png");
         frame.setIconImage(image.getImage());
@@ -31,64 +32,33 @@ public class Window {
         nameText.setBounds(135,10,150,20);
         frame.add(nameText);
 
-        departureDateLabel = new JLabel("Enter Departure Date");
-        departureDateLabel.setBounds(10,30,150,20);
-        frame.add(departureDateLabel);
-
-        departureDateText = new JTextField();
-        departureDateText.setBounds(135,30,150,20);
-        frame.add(departureDateText);
-
         ageLabel = new JLabel("Enter Age");
-        ageLabel.setBounds(10,50,90,20);
+        ageLabel.setBounds(10,30,90,20);
         frame.add(ageLabel);
 
         ageText = new JTextField();
-        ageText.setBounds(135,50,150,20);
+        ageText.setBounds(135,30,150,20);
         frame.add(ageText);
 
         emailLabel = new JLabel("Enter Email");
-        emailLabel.setBounds(10,70,90,20);
+        emailLabel.setBounds(10,50,90,20);
         frame.add(emailLabel);
 
         emailText = new JTextField();
-        emailText.setBounds(135,70,150,20);
+        emailText.setBounds(135,50,150,20);
         frame.add(emailText);
 
-        genderLabel = new JLabel("Enter Gender");
-        genderLabel.setBounds(10,90,90,20);
-        frame.add(genderLabel);
-
-        genderText = new JTextField();
-        genderText.setBounds(135,90,150,20);
-        frame.add(genderText);
-
-        destinationLabel = new JLabel("Enter Destination");
-        destinationLabel.setBounds(10,110,150,20);
-        frame.add(destinationLabel);
-
-        destinationText = new JTextField();
-        destinationText.setBounds(135,110,150,20);
-        frame.add(destinationText);
-
-        departureTimeLabel = new JLabel("Enter Departure Time");
-        departureTimeLabel.setBounds(10,130,150,20);
-        frame.add(departureTimeLabel);
-
-        departureTimeText = new JTextField();
-        departureTimeText.setBounds(135,130,150,20);
-        frame.add(departureTimeText);
-
         phoneNumberLabel = new JLabel("Enter Phone Number");
-        phoneNumberLabel.setBounds(10,150,150,20);
+        phoneNumberLabel.setBounds(10,70,150,20);
         frame.add(phoneNumberLabel);
 
         phoneNumberText = new JTextField();
-        phoneNumberText.setBounds(135,150,150,20);
+        phoneNumberText.setBounds(135,70,150,20);
         frame.add(phoneNumberText);
 
         submitButton = new JButton("Submit");
         submitButton.setBounds(50,225,100,50);
+<<<<<<< Updated upstream:BoardingPassProject/src/Window.java
         submitButton.addActionListener((event) -> {
             try {
                 new Member(nameText.getText(),emailText.getText(),phoneNumberText.getText(), genderText.getText(), ageText.getText(), departureDateText.getText(),destinationText.getText(),departureTimeText.getText());
@@ -99,6 +69,9 @@ public class Window {
                 e.printStackTrace();
             }
         });
+=======
+        submitButton.addActionListener(this);
+>>>>>>> Stashed changes:BoardingPassProject/src/BaseWindow.java
         frame.add(submitButton);
 
         quitButton = new JButton("Quit");
@@ -109,4 +82,21 @@ public class Window {
         frame.setVisible(true);
     }
 
+    @Override
+    public void actionPerformed(ActionEvent e) {
+
+        if (e.getSource() == submitButton) {
+
+            member.setName(nameText.getText());
+            member.setAge(ageText.getText());
+            member.setEmail(emailText.getText());
+            member.setPhoneNumber(phoneNumberText.getText());
+
+            frame.dispose();
+
+            GenderWindow genderWindow = new GenderWindow();
+
+        }
+
+    }
 }
