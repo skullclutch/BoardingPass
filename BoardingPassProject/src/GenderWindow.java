@@ -3,7 +3,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class GenderWindow extends BaseWindow implements ActionListener{
+public class GenderWindow extends BaseWindow implements ActionListener {
 
     JFrame frame = new JFrame("Select Gender");
     JButton femaleButton, maleButton;
@@ -14,7 +14,7 @@ public class GenderWindow extends BaseWindow implements ActionListener{
     GenderWindow(Member member) {
         this.member = member;
         label = new JLabel("Please Pick How You Identify:");
-        label.setBounds(300,0,800,50);
+        label.setBounds(300, 0, 800, 50);
         label.setFont(new Font(null, Font.BOLD, 25));
 
         ImageIcon image = new ImageIcon("BoardingPass/BoardingPassProject/src/img.png");
@@ -23,23 +23,22 @@ public class GenderWindow extends BaseWindow implements ActionListener{
 
         frame.add(label);
         frame.setLayout(null);
-        frame.setSize(1000,800);
+        frame.setSize(1000, 800);
         frame.setLocationRelativeTo(null);
 
         femaleButton = new JButton("Female");
-        femaleButton.setBounds(250,200,250,200);
+        femaleButton.setBounds(250, 200, 250, 200);
         femaleButton.setFont(new Font(null, Font.BOLD, 30));
         femaleButton.setFocusable(false);
         femaleButton.addActionListener(this);
         frame.add(femaleButton);
 
         maleButton = new JButton("Male");
-        maleButton.setBounds(500,200,250,200);
+        maleButton.setBounds(500, 200, 250, 200);
         maleButton.setFont(new Font(null, Font.BOLD, 30));
         maleButton.setFocusable(false);
         maleButton.addActionListener(this);
         frame.add(maleButton);
-
 
 
         frame.setVisible(true);

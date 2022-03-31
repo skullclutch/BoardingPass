@@ -12,14 +12,12 @@ public class DepartureDateTimeWindow extends DestinationWindow implements Action
     JButton submitButton;
     JTextField departureDateText, departureTimeText;
     JLabel departureDateLabel, departureTimeLabel, label;
-//    Member member;
 
     DepartureDateTimeWindow(Member member) {
         super(member);
-//        this.member = member;
         label = new JLabel("Please Choose Departure Date and Time:");
-        label.setBounds(250,0,800,50);
-        label.setFont(new Font(null, Font.BOLD,25));
+        label.setBounds(250, 0, 800, 50);
+        label.setFont(new Font(null, Font.BOLD, 25));
 
         ImageIcon image = new ImageIcon("BoardingPass/BoardingPassProject/src/img.png");
         frame.setIconImage(image.getImage());
@@ -27,19 +25,19 @@ public class DepartureDateTimeWindow extends DestinationWindow implements Action
 
         frame.add(label);
         frame.setLayout(null);
-        frame.setSize(1000,800);
+        frame.setSize(1000, 800);
         frame.setLocationRelativeTo(null);
 
         departureDateLabel = new JLabel("Enter Departure Date");
-        departureDateLabel.setBounds(10,55,120,20);
+        departureDateLabel.setBounds(10, 55, 120, 20);
         frame.add(departureDateLabel);
 
         departureDateText = new JTextField();
-        departureDateText.setBounds(135,55,150,20);
+        departureDateText.setBounds(135, 55, 150, 20);
         frame.add(departureDateText);
 
         departureTimeLabel = new JLabel("Enter Departure Time");
-        departureTimeLabel.setBounds(10,75,130,20);
+        departureTimeLabel.setBounds(10, 75, 130, 20);
         frame.add(departureTimeLabel);
 
         departureTimeText = new JTextField("ex: 16:00 for 4:00pm");
@@ -69,11 +67,11 @@ public class DepartureDateTimeWindow extends DestinationWindow implements Action
 
             }
         });
-        departureTimeText.setBounds(135,75,150,20);
+        departureTimeText.setBounds(135, 75, 150, 20);
         frame.add(departureTimeText);
 
         submitButton = new JButton("Submit");
-        submitButton.setBounds(400,100,100,50);
+        submitButton.setBounds(400, 100, 100, 50);
         submitButton.setFocusable(false);
         submitButton.addActionListener(this);
         frame.add(submitButton);

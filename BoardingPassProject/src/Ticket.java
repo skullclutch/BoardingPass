@@ -1,8 +1,5 @@
-import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.time.format.DateTimeFormatter;
-import java.time.format.DateTimeFormatterBuilder;
 import java.util.*;
 
 public class Ticket {
@@ -32,16 +29,7 @@ public class Ticket {
     Ticket(String departureTime, String destination, String departureDate) throws ParseException {
         this.ETA = eta(departureTime, chooseDestination(destination), departureDate);
         this.destination = destination;
-//        this.boardingPassTicket = String.valueOf(getGenNumber());
-//        System.out.println(this.departureTime + " " + this.ETA + " " + this.boardingPassTicket);
     }
-
-    //ONLY USED WHILE TESTING WITH MAIN METHOD IN THIS CLASS
-//    public Ticket() {
-//
-//    }
-    //*****************************
-
 
     public int chooseDestination(String Destination) {
 
@@ -102,30 +90,12 @@ public class Ticket {
 
         //set up way to print out a string using the SimpleDateFormat
         SimpleDateFormat sdf2 = new SimpleDateFormat("MMM/d/YYYY HH:mm aa");
-        long arrivalTimeinHours =  (calendar.getTimeInMillis());
+        long arrivalTimeinHours = (calendar.getTimeInMillis());
         System.out.println("ETA: " + sdf2.format(arrivalTimeinHours));
         ETA = sdf2.format(arrivalTimeinHours);
         return ETA;
 
 
     }
-
-
-//   GenNumber genNumber = new GenNumber();
-//
-//    public String getGenNumber() {
-//        return genNumber.getNumber();
-//    }
-    //    public int generatePassNumber() {
-//
-//        Random r = new Random();
-//
-//        int ticketNum = r.nextInt(5000);
-//
-//        System.out.println("Boarding Pass Number: " + ticketNum);
-//
-//        return ticketNum;
-//
-//    }
 
 }

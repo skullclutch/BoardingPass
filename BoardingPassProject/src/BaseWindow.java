@@ -17,7 +17,7 @@ public class BaseWindow extends Member implements ActionListener {
         frame = new JFrame();
         frame.setLayout(null);
         frame.setTitle("Boarding Pass Ticket Terminal");
-        frame.setSize(1000,800);
+        frame.setSize(1000, 800);
         frame.setLocationRelativeTo(null);
 
         ImageIcon image = new ImageIcon("BoardingPass/BoardingPassProject/src/img.png");
@@ -25,45 +25,45 @@ public class BaseWindow extends Member implements ActionListener {
         frame.getContentPane().setBackground(new Color(23, 217, 147));
 
         nameLabel = new JLabel("Enter Name");
-        nameLabel.setBounds(10,10,90,20);
+        nameLabel.setBounds(10, 10, 90, 20);
         frame.add(nameLabel);
 
         nameText = new JTextField();
-        nameText.setBounds(135,10,150,20);
+        nameText.setBounds(135, 10, 150, 20);
         frame.add(nameText);
 
         ageLabel = new JLabel("Enter Age");
-        ageLabel.setBounds(10,30,90,20);
+        ageLabel.setBounds(10, 30, 90, 20);
         frame.add(ageLabel);
 
         ageText = new JTextField();
-        ageText.setBounds(135,30,150,20);
+        ageText.setBounds(135, 30, 150, 20);
         frame.add(ageText);
 
         emailLabel = new JLabel("Enter Email");
-        emailLabel.setBounds(10,50,90,20);
+        emailLabel.setBounds(10, 50, 90, 20);
         frame.add(emailLabel);
 
         emailText = new JTextField();
-        emailText.setBounds(135,50,150,20);
+        emailText.setBounds(135, 50, 150, 20);
         frame.add(emailText);
 
         phoneNumberLabel = new JLabel("Enter Phone Number");
-        phoneNumberLabel.setBounds(10,70,150,20);
+        phoneNumberLabel.setBounds(10, 70, 150, 20);
         frame.add(phoneNumberLabel);
 
         phoneNumberText = new JTextField();
-        phoneNumberText.setBounds(135,70,150,20);
+        phoneNumberText.setBounds(135, 70, 150, 20);
         frame.add(phoneNumberText);
 
         submitButton = new JButton("Submit");
-        submitButton.setBounds(50,225,100,50);
+        submitButton.setBounds(50, 225, 100, 50);
         submitButton.addActionListener(this);
         frame.add(submitButton);
 
         quitButton = new JButton("Quit");
-        quitButton.setBounds(150,225,100,50);
-        quitButton.addActionListener((event)->frame.dispose());
+        quitButton.setBounds(150, 225, 100, 50);
+        quitButton.addActionListener((event) -> frame.dispose());
         frame.add(quitButton);
 
         frame.setVisible(true);

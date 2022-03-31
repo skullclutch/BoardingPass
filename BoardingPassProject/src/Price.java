@@ -18,38 +18,29 @@ public class Price {
     static double basePriceNYC = 426.00;
 
 
-
-
     public static double ticketPrice(int age, String gender, String destination, String departureDate) throws ParseException {
-//        daysAway(departureDate); // will return a long rate: rate by days away.
-//        System.out.println("Destination introduced: " + destination);
-//        ratesDaysAwayAndDestination(ratebyDestination(destination), daysAway(departureDate));
         rateByAge(ratesDaysAwayAndDestination(ratebyDestination(destination), daysAway(departureDate)), age, gender);
-//        System.out.println("Final Price: " + finalPrice);
         return finalPrice;
     }
 
     private static double rateByAge(double rate, int age, String gender) {
 
-//        System.out.println("original rate: " + rate);
         double ageDiscount = rate;
 
-        if(age <=12){
+        if (age <= 12) {
             ageDiscount = rate - (rate * .5);
-        } else if(age >= 60){
+        } else if (age >= 60) {
             ageDiscount = rate - (rate * .6);
-        } else {ageDiscount = rate;}
+        } else {
+            ageDiscount = rate;
+        }
 
-//        System.out.println("age discount: " + ageDiscount);
-//        System.out.println(gender);
-//        gender = gender.toUpperCase();
         return rateByGender(ageDiscount, gender);
     }
 
     private static double rateByGender(double ageDiscount, String gender) {
-        if(gender.equals("f")){
+        if (gender.equals("f")) {
             finalPrice = ageDiscount - (ageDiscount * .25);
-//            System.out.println("Discount of gender: " + finalPrice);
 
         } else finalPrice = ageDiscount;
 
@@ -57,10 +48,10 @@ public class Price {
     }
 
 
-    public static double ratebyDestination(String destination){
+    public static double ratebyDestination(String destination) {
         System.out.println(destination);
 
-        switch (destination){
+        switch (destination) {
             case "Chicago":
                 return basePriceChicago;
             case "Denver":
@@ -76,15 +67,13 @@ public class Price {
     }
 
     public static int daysAway(String departureDate) throws ParseException {
-//        System.out.println("Departure Date fed to the daysAway method: " + departureDate);
 
         // set today's date and format it as a String "dd/MM/yyyy"
         Calendar c = new GregorianCalendar();
         String year = String.valueOf(c.get(Calendar.YEAR));
-        String month = String.valueOf(c.get(Calendar.MONTH)+1);
+        String month = String.valueOf(c.get(Calendar.MONTH) + 1);
         String day = String.valueOf(c.get(Calendar.DAY_OF_MONTH));
-        String todaysDateStr = String.valueOf(month + "/" + day +"/" + year);
-
+        String todaysDateStr = String.valueOf(month + "/" + day + "/" + year);
 
 
         //parse both departure date and current date
@@ -99,17 +88,6 @@ public class Price {
         //convert difference into days
         int difference_In_Days = (int) ((difference_In_Time / (1000 * 60 * 60 * 24)) % 365);
 
-//        System Printout results to test
-//        System.out.println("Today String: " + todaysDateStr);
-//        System.out.println("Today Parsed: " + d1);
-//        System.out.println("Today getTime(): " + d1.getTime());
-//        System.out.println("");
-//        System.out.println("Departure String: " + departureDate);
-//        System.out.println("Departure Parsed: " + d2);
-//        System.out.println("Departure Date with getTime(): " + d2.getTime());
-//        System.out.println("Difference in days: " + difference_In_Days);
-
-
         return difference_In_Days;
     }
 
@@ -117,26 +95,19 @@ public class Price {
     private static double ratesDaysAwayAndDestination(double basePrice, int daysAway) {
         double rateByDaysAway = 0;
 
-        if ( daysAway >=90){
-            rateByDaysAway = basePrice;}
-        else if(daysAway >=75){
-            rateByDaysAway = (basePrice * .25) + basePrice;}
-        else if ( daysAway >=30){
-            rateByDaysAway = (basePrice * .50) + basePrice;}
-        else if ( daysAway >=14){
-            rateByDaysAway = (basePrice * .75) + basePrice;}
-        else if ( daysAway >=0){
+        if (daysAway >= 90) {
+            rateByDaysAway = basePrice;
+        } else if (daysAway >= 75) {
+            rateByDaysAway = (basePrice * .25) + basePrice;
+        } else if (daysAway >= 30) {
+            rateByDaysAway = (basePrice * .50) + basePrice;
+        } else if (daysAway >= 14) {
+            rateByDaysAway = (basePrice * .75) + basePrice;
+        } else if (daysAway >= 0) {
             rateByDaysAway = (basePrice * .85) + basePrice;
         }
-//        System.out.println(rateByDaysAway);
+
         return rateByDaysAway;
+
     }
-
-
-
-//    public static void main(String[] args) throws ParseException {
-//        //establish base price for each City
-//
-//        ticketPrice(13, "f", "Chicago", "6/25/2022");
-//        }
 }
