@@ -36,13 +36,13 @@ public class Ticket {
     }
 
     //ONLY USED WHILE TESTING WITH MAIN METHOD IN THIS CLASS
-    public Ticket() {
-
-    }
+//    public Ticket() {
+//
+//    }
     //*****************************
 
 
-    public int chooseDestination(String Destination) { //If theres a GUI parameter would take in a listener
+    public int chooseDestination(String Destination) {
 
 
         int time = 0;
@@ -54,7 +54,7 @@ public class Ticket {
             case "Chicago":
                 time = calcTimeOfFlight(chicago);
                 break;
-            case "New York City":
+            case "New York":
                 time = calcTimeOfFlight(newYork);
                 break;
             case "Dallas":

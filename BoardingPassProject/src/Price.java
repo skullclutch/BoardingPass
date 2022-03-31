@@ -67,7 +67,7 @@ public class Price {
                 return basePriceDenver;
             case "Dallas":
                 return basePriceDallas;
-            case "New York City":
+            case "New York":
                 return basePriceNYC;
             default:
                 System.out.println("please enter one of the four available cities");

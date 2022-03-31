@@ -125,6 +125,7 @@ public class Member {
 
     public void setDestination(String destination) {
         this.destination = destination;
+
         memberList.put("Destination", destination);
     }
 
@@ -144,9 +145,10 @@ public class Member {
     }
 
     public String getETA() throws ParseException {
-        this.ETA = String.valueOf(new Ticket(this.getDepartureTime(),this.getDestination()));
-        memberList.put("ETA", ETA);
-        return ETA;
+        Ticket ticket = new Ticket(this.departureTime, this.destination);
+//        this.ETA = String.valueOf(new Ticket(this.getDepartureTime(),this.getDestination()));
+        memberList.put("ETA", ticket);
+        return String.valueOf(ticket);
     }
 
     public String getTicketPrice() throws ParseException {

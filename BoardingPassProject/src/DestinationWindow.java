@@ -61,22 +61,22 @@ public class DestinationWindow extends GenderWindow implements ActionListener {
     public void actionPerformed(ActionEvent e) {
 
         if (e.getSource() == chicagoButton) {
-            member.setDestination(chicagoButton.getActionCommand());
+            member.setDestination("Chicago");
             frame.dispose();
             DepartureDateTimeWindow departureDateTimeWindow = new DepartureDateTimeWindow();
 
         } else if (e.getSource() == dallasButton) {
-            member.setDestination(dallasButton.getActionCommand());
+            member.setDestination("Dallas");
             frame.dispose();
             DepartureDateTimeWindow departureDateTimeWindow = new DepartureDateTimeWindow();
 
         } else if (e.getSource() == denverButton) {
-            member.setDestination(denverButton.getActionCommand());
+            member.setDestination("Denver");
             frame.dispose();
             DepartureDateTimeWindow departureDateTimeWindow = new DepartureDateTimeWindow();
 
         } else if (e.getSource() == newYorkButton) {
-            member.setDestination(newYorkButton.getActionCommand());
+            member.setDestination("New York");
             frame.dispose();
             DepartureDateTimeWindow departureDateTimeWindow = new DepartureDateTimeWindow();
 
