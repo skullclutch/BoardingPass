@@ -6,10 +6,11 @@ public class BoardingPassTicketWindow extends DepartureDateTimeWindow {
 
     JFrame frame = new JFrame("Generated Boarding Pass");
     JLabel boardingPassNumberLabel, flightDetailsLabel, fromToLabel, userInformationLabel, ticketPriceLabel, label;
+    Member member;
 
-
-    BoardingPassTicketWindow() throws ParseException {
-
+    BoardingPassTicketWindow(Member member) throws ParseException {
+        super(member);
+        this.member = member;
         label = new JLabel("Here is your Ticket Information:");
         label.setBounds(300,0,800,50);
         label.setFont(new Font(null, Font.BOLD, 25));
@@ -41,6 +42,7 @@ public class BoardingPassTicketWindow extends DepartureDateTimeWindow {
         fromToLabel.setFont(new Font(null, Font.BOLD, 15));
         frame.add(fromToLabel);
 
+        System.out.print(member);
         flightDetailsLabel = new JLabel("Leaving on: " + member.getDepartureDate() + '\n' +
                 "At: " + member.getDepartureTime() + '\n' +
                 "Will arrive at: " + member.getETA());

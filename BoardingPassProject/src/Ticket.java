@@ -31,6 +31,7 @@ public class Ticket {
 
     Ticket(String departureTime, String destination) throws ParseException {
         this.ETA = eta(departureTime, chooseDestination(destination));
+        this.destination = destination;
 //        this.boardingPassTicket = String.valueOf(getGenNumber());
 //        System.out.println(this.departureTime + " " + this.ETA + " " + this.boardingPassTicket);
     }

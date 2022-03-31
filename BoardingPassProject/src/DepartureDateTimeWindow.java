@@ -12,10 +12,11 @@ public class DepartureDateTimeWindow extends DestinationWindow implements Action
     JButton submitButton;
     JTextField departureDateText, departureTimeText;
     JLabel departureDateLabel, departureTimeLabel, label;
+//    Member member;
 
-
-    DepartureDateTimeWindow() {
-
+    DepartureDateTimeWindow(Member member) {
+        super(member);
+//        this.member = member;
         label = new JLabel("Please Choose Departure Date and Time:");
         label.setBounds(250,0,800,50);
         label.setFont(new Font(null, Font.BOLD,25));
@@ -91,7 +92,7 @@ public class DepartureDateTimeWindow extends DestinationWindow implements Action
             frame.dispose();
 
             try {
-                BoardingPassTicketWindow boardingPassTicketWindow = new BoardingPassTicketWindow();
+                BoardingPassTicketWindow boardingPassTicketWindow = new BoardingPassTicketWindow(member);
             } catch (ParseException ex) {
                 ex.printStackTrace();
             }

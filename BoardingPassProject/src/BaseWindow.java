@@ -81,7 +81,7 @@ public class BaseWindow extends Member implements ActionListener {
 
             frame.dispose();
 
-            GenderWindow genderWindow = new GenderWindow();
+            GenderWindow genderWindow = new GenderWindow(member);
 
         }
 

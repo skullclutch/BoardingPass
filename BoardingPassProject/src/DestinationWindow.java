@@ -8,10 +8,11 @@ public class DestinationWindow extends GenderWindow implements ActionListener {
     JFrame frame = new JFrame("Select Destination");
     JButton chicagoButton, dallasButton, denverButton, newYorkButton;
     JLabel label;
+//    Member member;
 
-
-    DestinationWindow() {
-
+    DestinationWindow(Member member) {
+        super(member);
+//        this.member = member;
         label = new JLabel("Please Pick Your Destination of Choice:");
         label.setBounds(250,0,800,50);
         label.setFont(new Font(null, Font.BOLD,25));
@@ -63,22 +64,21 @@ public class DestinationWindow extends GenderWindow implements ActionListener {
         if (e.getSource() == chicagoButton) {
             member.setDestination("Chicago");
             frame.dispose();
-            DepartureDateTimeWindow departureDateTimeWindow = new DepartureDateTimeWindow();
-
+            DepartureDateTimeWindow departureDateTimeWindow = new DepartureDateTimeWindow(member);
         } else if (e.getSource() == dallasButton) {
             member.setDestination("Dallas");
             frame.dispose();
-            DepartureDateTimeWindow departureDateTimeWindow = new DepartureDateTimeWindow();
+            DepartureDateTimeWindow departureDateTimeWindow = new DepartureDateTimeWindow(member);
 
         } else if (e.getSource() == denverButton) {
             member.setDestination("Denver");
             frame.dispose();
-            DepartureDateTimeWindow departureDateTimeWindow = new DepartureDateTimeWindow();
+            DepartureDateTimeWindow departureDateTimeWindow = new DepartureDateTimeWindow(member);
 
         } else if (e.getSource() == newYorkButton) {
             member.setDestination("New York");
             frame.dispose();
-            DepartureDateTimeWindow departureDateTimeWindow = new DepartureDateTimeWindow();
+            DepartureDateTimeWindow departureDateTimeWindow = new DepartureDateTimeWindow(member);
 
         }
     }

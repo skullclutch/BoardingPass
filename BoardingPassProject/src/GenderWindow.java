@@ -8,10 +8,11 @@ public class GenderWindow extends BaseWindow implements ActionListener{
     JFrame frame = new JFrame("Select Gender");
     JButton femaleButton, maleButton;
     JLabel label;
+    Member member;
 
 
-    GenderWindow() {
-
+    GenderWindow(Member member) {
+        this.member = member;
         label = new JLabel("Please Pick How You Identify:");
         label.setBounds(300,0,800,50);
         label.setFont(new Font(null, Font.BOLD, 25));
@@ -52,14 +53,14 @@ public class GenderWindow extends BaseWindow implements ActionListener{
 
             frame.dispose();
 
-            DestinationWindow destinationWindow = new DestinationWindow();
+            DestinationWindow destinationWindow = new DestinationWindow(member);
 
         } else if (e.getSource() == maleButton) {
             member.setGender(maleButton.getActionCommand());
 
             frame.dispose();
 
-            DestinationWindow destinationWindow = new DestinationWindow();
+            DestinationWindow destinationWindow = new DestinationWindow(member);
         }
     }
 }
