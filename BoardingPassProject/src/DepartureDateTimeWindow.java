@@ -1,5 +1,4 @@
 import javax.swing.*;
-import javax.swing.text.html.FormSubmitEvent;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -10,7 +9,7 @@ import java.text.ParseException;
 public class DepartureDateTimeWindow extends DestinationWindow implements ActionListener {
 
     JFrame frame = new JFrame("Enter Departure Date and Time");
-    JButton submitButton = new JButton("Submit");
+    JButton submitButton;
     JTextField departureDateText, departureTimeText;
     JLabel departureDateLabel, departureTimeLabel, label;
 
