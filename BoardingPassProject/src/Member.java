@@ -145,7 +145,7 @@ public class Member {
     }
 
     public String getETA() throws ParseException {
-        Ticket ticket = new Ticket(this.departureTime, this.destination);
+        Ticket ticket = new Ticket(this.departureTime, this.destination, this.departureDate);
 //        this.ETA = String.valueOf(new Ticket(this.getDepartureTime(),this.getDestination()));
         memberList.put("ETA", ticket);
         return String.valueOf(ticket.ETA);

@@ -29,8 +29,8 @@ public class Ticket {
     double newYork = 2806.00;
 
 
-    Ticket(String departureTime, String destination) throws ParseException {
-        this.ETA = eta(departureTime, chooseDestination(destination));
+    Ticket(String departureTime, String destination, String departureDate) throws ParseException {
+        this.ETA = eta(departureTime, chooseDestination(destination), departureDate);
         this.destination = destination;
 //        this.boardingPassTicket = String.valueOf(getGenNumber());
 //        System.out.println(this.departureTime + " " + this.ETA + " " + this.boardingPassTicket);
@@ -80,23 +80,32 @@ public class Ticket {
 
     }
 
-    public String eta(String departureTime, int flightTime) throws ParseException {
-        System.out.println("Departure Time: " + departureTime);
+    public String eta(String departureTime, int flightTime, String departureDate) throws ParseException {
+        System.out.println("Departure Date and Time: " + departureDate + " " + departureTime);
+
+        //combine departure date and departure time into a parsed millisecond value
+        String departureDateAndTime = departureDate + " " + departureTime;
+        System.out.println("departureDateAndTime: " + departureDateAndTime);
+
 
         // get the hours from the departure time and convert it to date so that the Calendar util will accept it
-        SimpleDateFormat sdf = new SimpleDateFormat("HH:mm");
-        Date departTimeParsed = sdf.parse(departureTime);
+        SimpleDateFormat sdf = new SimpleDateFormat("MM/dd/yyyy HH:mm");
+        Date departTimeParsed = sdf.parse(departureDateAndTime);
+        System.out.println("Depart Time Parsed: " + departTimeParsed);
 
         //Create a calendar object, set it to the departure Time and add the flight time to it
         Calendar calendar = Calendar.getInstance();
         calendar.setTime(departTimeParsed);
+        System.out.println("after time is set: " + calendar.getTime());
         calendar.add(Calendar.HOUR_OF_DAY, flightTime);
+        System.out.println("after flight time is added: " + calendar.getTime());
 
         //set up way to print out a string using the SimpleDateFormat
-        SimpleDateFormat sdf2 = new SimpleDateFormat("hh:mm aa");
+        SimpleDateFormat sdf2 = new SimpleDateFormat("MMM/d/YYYY HH:mm aa");
         long arrivalTimeinHours =  (calendar.getTimeInMillis());
         System.out.println("ETA: " + sdf2.format(arrivalTimeinHours));
-        return (sdf.format(arrivalTimeinHours));
+        ETA = sdf2.format(arrivalTimeinHours);
+        return ETA;
 
 
     }
