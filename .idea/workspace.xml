@@ -60,7 +60,7 @@
       <recent name="org.genspark" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.MemberTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.genspark.Main" />
       <module name="BoardingPass" />
@@ -70,6 +70,52 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MemberTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BoardingPass" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.genspark.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.genspark" />
+      <option name="MAIN_CLASS_NAME" value="org.genspark.MemberTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PriceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BoardingPass" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.genspark.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.genspark" />
+      <option name="MAIN_CLASS_NAME" value="org.genspark.PriceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PriceTest.rateByGender" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BoardingPass" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.genspark.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.genspark" />
+      <option name="MAIN_CLASS_NAME" value="org.genspark.PriceTest" />
+      <option name="METHOD_NAME" value="rateByGender" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -89,61 +135,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TicketTest.calcTimeOfFlight" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BoardingPass" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.genspark.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.genspark" />
-      <option name="MAIN_CLASS_NAME" value="org.genspark.TicketTest" />
-      <option name="METHOD_NAME" value="calcTimeOfFlight" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TicketTest.chooseDestination" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BoardingPass" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.genspark.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.genspark" />
-      <option name="MAIN_CLASS_NAME" value="org.genspark.TicketTest" />
-      <option name="METHOD_NAME" value="chooseDestination" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TicketTest.eta" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="BoardingPass" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.genspark.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.genspark" />
-      <option name="MAIN_CLASS_NAME" value="org.genspark.TicketTest" />
-      <option name="METHOD_NAME" value="eta" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.MemberTest" />
         <item itemvalue="JUnit.TicketTest" />
-        <item itemvalue="JUnit.TicketTest.calcTimeOfFlight" />
-        <item itemvalue="JUnit.TicketTest.chooseDestination" />
-        <item itemvalue="JUnit.TicketTest.eta" />
+        <item itemvalue="JUnit.PriceTest" />
+        <item itemvalue="JUnit.PriceTest.rateByGender" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>

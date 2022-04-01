@@ -17,7 +17,7 @@ price = new Price();
 
     @Test
     void ticketPrice() throws ParseException {
-    double resultTP = Double.parseDouble(Price.ticketPrice(15, "f", "Dallas", "10/22/2022"));
+    double resultTP = Double.parseDouble(Price.ticketPrice(15, "Female", "Dallas", "10/22/2022"));
     double priceToDallasFor15YearOldFemailOnOct22_2022 = 232.41;
     assertEquals(priceToDallasFor15YearOldFemailOnOct22_2022, resultTP);
     assertNotEquals(200.00, resultTP);
@@ -32,7 +32,7 @@ price = new Price();
 
     @Test
     void rateByGender() {
-        double resultRBG = Price.rateByGender(300.00, "f");
+        double resultRBG = Price.rateByGender(300.00, "Female");
         assertEquals(225.00, resultRBG);
         assertNotEquals(300.00, resultRBG);
     }
