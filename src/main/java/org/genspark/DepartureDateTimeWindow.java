@@ -88,7 +88,7 @@ public class DepartureDateTimeWindow extends DestinationWindow implements Action
         if (e.getSource() == submitButton) {
             member.setDepartureDate(departureDateText.getText());
             member.setDepartureTime(departureTimeText.getText());
-
+            member.writeMembership();
             frame.dispose();
 
             try {

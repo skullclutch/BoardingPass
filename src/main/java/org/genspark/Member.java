@@ -133,5 +133,20 @@ public class Member {
         return ticketPrice;
     }
 
+    public void writeMembership(){
+        try {
+            //When writing the FileWriter, type in the filename, and "true" if you want to append or "false" if you don't want to append if a file exists.
+            userMembership = new FileWriter("UserInfoz.csv", true);
+            //Add a PrintWriter to do the actual writing
+            PrintWriter pw = new PrintWriter(userMembership);
+            // Next we command the PrintWriter to print the memberlist HashMap we created.
+            pw.print(memberList);
+            //you must ALWAYS close the PrintWriter otherwise it will not write anything
+            pw.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
 
 }
