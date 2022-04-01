@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="364f8269-570d-4fbe-803a-a9b442b71135" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/genspark/BaseWindow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/genspark/BoardingPassTicketWindow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/genspark/DateTime.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/genspark/DepartureDateTimeWindow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/genspark/DestinationWindow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/genspark/GenderWindow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/genspark/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/genspark/Member.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/genspark/Price.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/genspark/Ticket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/genspark/img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/genspark/MemberTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/genspark/PriceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/genspark/TicketTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BoardingPass.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BoardingPassProject/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BoardingPassProject/.idea/csv-plugin.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BoardingPassProject/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BoardingPassProject/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BoardingPassProject/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BoardingPassProject/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BoardingPassProject/BoardingPassProject.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BoardingPassProject/UserInfo.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BoardingPassProject/out/production/BoardingPassProject/BaseWindow.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BoardingPassProject/out/production/BoardingPassProject/BoardingPassTicketWindow.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BoardingPassProject/out/production/BoardingPassProject/DateTime.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BoardingPassProject/out/production/BoardingPassProject/DepartureDateTimeWindow$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BoardingPassProject/out/production/BoardingPassProject/DepartureDateTimeWindow.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BoardingPassProject/out/production/BoardingPassProject/DestinationWindow.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BoardingPassProject/out/production/BoardingPassProject/GenderWindow.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BoardingPassProject/out/production/BoardingPassProject/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BoardingPassProject/out/production/BoardingPassProject/Member.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BoardingPassProject/out/production/BoardingPassProject/Price.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BoardingPassProject/out/production/BoardingPassProject/Ticket.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BoardingPassProject/out/production/BoardingPassProject/img.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BoardingPassProject/src/BaseWindow.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BoardingPassProject/src/BoardingPassTicketWindow.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BoardingPassProject/src/DateTime.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BoardingPassProject/src/DepartureDateTimeWindow.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BoardingPassProject/src/DestinationWindow.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BoardingPassProject/src/GenderWindow.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BoardingPassProject/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BoardingPassProject/src/Member.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BoardingPassProject/src/Price.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BoardingPassProject/src/Ticket.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BoardingPassProject/src/img.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BoardingPassProject/test/MemberTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BoardingPass/BaseWindow.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BoardingPass/BoardingPassTicketWindow.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BoardingPass/DateTime.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BoardingPass/DepartureDateTimeWindow$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BoardingPass/DepartureDateTimeWindow.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BoardingPass/DestinationWindow.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BoardingPass/GenderWindow.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BoardingPass/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BoardingPass/Member.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BoardingPass/Price.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BoardingPass/Ticket.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BoardingPass/img.png" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package-info" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="27AzOxqkE9tbpMfTfTjkQw67QtX" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/org/genspark" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/org/genspark" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.genspark" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.TicketTest">
+    <configuration name="MemberTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BoardingPass" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.genspark.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.genspark" />
+      <option name="MAIN_CLASS_NAME" value="org.genspark.MemberTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TicketTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BoardingPass" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.genspark.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.genspark" />
+      <option name="MAIN_CLASS_NAME" value="org.genspark.TicketTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TicketTest.calcTimeOfFlight" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BoardingPass" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.genspark.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.genspark" />
+      <option name="MAIN_CLASS_NAME" value="org.genspark.TicketTest" />
+      <option name="METHOD_NAME" value="calcTimeOfFlight" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TicketTest.chooseDestination" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BoardingPass" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.genspark.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.genspark" />
+      <option name="MAIN_CLASS_NAME" value="org.genspark.TicketTest" />
+      <option name="METHOD_NAME" value="chooseDestination" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TicketTest.eta" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BoardingPass" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.genspark.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.genspark" />
+      <option name="MAIN_CLASS_NAME" value="org.genspark.TicketTest" />
+      <option name="METHOD_NAME" value="eta" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TicketTest" />
+        <item itemvalue="JUnit.TicketTest.calcTimeOfFlight" />
+        <item itemvalue="JUnit.TicketTest.chooseDestination" />
+        <item itemvalue="JUnit.TicketTest.eta" />
+        <item itemvalue="JUnit.MemberTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="364f8269-570d-4fbe-803a-a9b442b71135" name="Changes" comment="" />
+      <created>1648777649826</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1648777649826</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>
