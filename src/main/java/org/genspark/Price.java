@@ -40,7 +40,7 @@ public class Price {
     }
 
     public static double rateByGender(double ageDiscount, String gender) {
-        if (gender.equals("f")) {
+        if (gender.equals("Female")) {
             finalPrice = ageDiscount - (ageDiscount * .25);
 
         } else finalPrice = ageDiscount;
