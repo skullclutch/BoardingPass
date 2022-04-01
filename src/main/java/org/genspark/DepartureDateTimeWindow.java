@@ -30,15 +30,15 @@ public class DepartureDateTimeWindow extends DestinationWindow implements Action
         frame.setSize(1000, 800);
         frame.setLocationRelativeTo(null);
 
-        departureDateLabel = new JLabel("Enter Departure Date");
+        departureDateLabel = new JLabel("Enter Depart Date");
         departureDateLabel.setBounds(10, 55, 120, 20);
         frame.add(departureDateLabel);
 
-        departureDateText = new JTextField();
+        departureDateText = new JTextField("ex: 10/24/2022");
         departureDateText.setBounds(135, 55, 150, 20);
         frame.add(departureDateText);
 
-        departureTimeLabel = new JLabel("Enter Departure Time");
+        departureTimeLabel = new JLabel("Enter Depart Time");
         departureTimeLabel.setBounds(10, 75, 130, 20);
         frame.add(departureTimeLabel);
 

@@ -5,73 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="364f8269-570d-4fbe-803a-a9b442b71135" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/genspark/BaseWindow.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/genspark/BoardingPassTicketWindow.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/genspark/DateTime.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/genspark/DepartureDateTimeWindow.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/genspark/DestinationWindow.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/genspark/GenderWindow.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/genspark/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/genspark/Member.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/genspark/Price.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/genspark/Ticket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/genspark/img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/genspark/MemberTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/genspark/PriceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/genspark/TicketTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BoardingPass.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BoardingPassProject/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BoardingPassProject/.idea/csv-plugin.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BoardingPassProject/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BoardingPassProject/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BoardingPassProject/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BoardingPassProject/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BoardingPassProject/BoardingPassProject.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BoardingPassProject/UserInfo.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BoardingPassProject/out/production/BoardingPassProject/BaseWindow.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BoardingPassProject/out/production/BoardingPassProject/BoardingPassTicketWindow.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BoardingPassProject/out/production/BoardingPassProject/DateTime.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BoardingPassProject/out/production/BoardingPassProject/DepartureDateTimeWindow$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BoardingPassProject/out/production/BoardingPassProject/DepartureDateTimeWindow.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BoardingPassProject/out/production/BoardingPassProject/DestinationWindow.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BoardingPassProject/out/production/BoardingPassProject/GenderWindow.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BoardingPassProject/out/production/BoardingPassProject/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BoardingPassProject/out/production/BoardingPassProject/Member.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BoardingPassProject/out/production/BoardingPassProject/Price.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BoardingPassProject/out/production/BoardingPassProject/Ticket.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BoardingPassProject/out/production/BoardingPassProject/img.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BoardingPassProject/src/BaseWindow.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BoardingPassProject/src/BoardingPassTicketWindow.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BoardingPassProject/src/DateTime.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BoardingPassProject/src/DepartureDateTimeWindow.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BoardingPassProject/src/DestinationWindow.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BoardingPassProject/src/GenderWindow.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BoardingPassProject/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BoardingPassProject/src/Member.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BoardingPassProject/src/Price.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BoardingPassProject/src/Ticket.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BoardingPassProject/src/img.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BoardingPassProject/test/MemberTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BoardingPass/BaseWindow.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BoardingPass/BoardingPassTicketWindow.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BoardingPass/DateTime.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BoardingPass/DepartureDateTimeWindow$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BoardingPass/DepartureDateTimeWindow.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BoardingPass/DestinationWindow.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BoardingPass/GenderWindow.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BoardingPass/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BoardingPass/Member.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BoardingPass/Price.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BoardingPass/Ticket.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BoardingPass/img.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/genspark/DepartureDateTimeWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/genspark/DepartureDateTimeWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/genspark/DepartureDateTimeWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/genspark/DepartureDateTimeWindow.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,6 +48,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
   </component>
   <component name="RecentsManager">
@@ -125,8 +62,9 @@
       <recent name="org.genspark" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TicketTest">
-    <configuration name="MemberTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.genspark.Main" />
       <module name="BoardingPass" />
       <extension name="coverage">
         <pattern>
@@ -134,9 +72,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.genspark" />
-      <option name="MAIN_CLASS_NAME" value="org.genspark.MemberTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -206,11 +141,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.TicketTest" />
         <item itemvalue="JUnit.TicketTest.calcTimeOfFlight" />
         <item itemvalue="JUnit.TicketTest.chooseDestination" />
         <item itemvalue="JUnit.TicketTest.eta" />
-        <item itemvalue="JUnit.MemberTest" />
       </list>
     </recent_temporary>
   </component>
