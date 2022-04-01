@@ -117,7 +117,7 @@ public class Member {
 
     public String getBoardingPassNumber() {
         this.randomUUID = UUID.randomUUID().toString().split("-")[0].toUpperCase(Locale.ROOT);
-        memberList.put("Boarding Pass Number", boardingPassNumber);
+        memberList.put("Boarding Pass Number", randomUUID);
         return randomUUID;
     }
 
@@ -137,6 +137,7 @@ public class Member {
         try {
             //When writing the FileWriter, type in the filename, and "true" if you want to append or "false" if you don't want to append if a file exists.
             userMembership = new FileWriter("UserInfoz.csv", true);
+            userMembership.write("" + "\n");//creates new line for next entry
             //Add a PrintWriter to do the actual writing
             PrintWriter pw = new PrintWriter(userMembership);
             // Next we command the PrintWriter to print the memberlist HashMap we created.

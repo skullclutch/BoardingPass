@@ -83,7 +83,7 @@ public class BoardingPassTicketWindow extends DepartureDateTimeWindow {
         etaLabel.setFont(new Font(null, Font.BOLD, 15));
         frame.add(etaLabel);
 
-        ticketPriceLabel = new JLabel("Total Ticket Price: " + member.getTicketPrice());
+        ticketPriceLabel = new JLabel("Total Ticket Price: $ " + member.getTicketPrice());
         ticketPriceLabel.setBounds(355, 510, 600, 30);
         ticketPriceLabel.setFont(new Font(null, Font.BOLD, 15));
         frame.add(ticketPriceLabel);

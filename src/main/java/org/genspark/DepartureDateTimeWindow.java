@@ -35,6 +35,32 @@ public class DepartureDateTimeWindow extends DestinationWindow implements Action
         frame.add(departureDateLabel);
 
         departureDateText = new JTextField("ex: 10/24/2022");
+        departureDateText.addMouseListener(new MouseListener() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+
+            }
+
+            @Override
+            public void mousePressed(MouseEvent e) {
+                departureDateText.setText("");
+            }
+
+            @Override
+            public void mouseReleased(MouseEvent e) {
+
+            }
+
+            @Override
+            public void mouseEntered(MouseEvent e) {
+
+            }
+
+            @Override
+            public void mouseExited(MouseEvent e) {
+
+            }
+        });
         departureDateText.setBounds(135, 55, 150, 20);
         frame.add(departureDateText);
 

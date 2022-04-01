@@ -5,7 +5,6 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
-import java.util.Locale;
 
 //TODO to call this method, just enter ticketPrice(age, "gender", "destination", "departureDate");
 
@@ -20,9 +19,9 @@ public class Price {
     static double basePriceNYC = 426.00;
 
 
-    public static double ticketPrice(int age, String gender, String destination, String departureDate) throws ParseException {
+    public static String ticketPrice(int age, String gender, String destination, String departureDate) throws ParseException {
         rateByAge(ratesDaysAwayAndDestination(ratebyDestination(destination), daysAway(departureDate)), age, gender);
-        return finalPrice;
+        return String.format("%.2f", finalPrice);
     }
 
     public static double rateByAge(double rate, int age, String gender) {
